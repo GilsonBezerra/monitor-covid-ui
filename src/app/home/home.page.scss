@@ -32,6 +32,7 @@ ion-fab {
 }
 
 .ion-card {
+    border-radius: 3.125rem;
     background-color: rgb(26, 115, 232);
     color: white;
     height: 5rem;
@@ -51,5 +52,5 @@ ion-fab {
 }
 
 ion-footer {
-    margin-bottom: -20rem;
+    margin-bottom: 5rem;
 }
