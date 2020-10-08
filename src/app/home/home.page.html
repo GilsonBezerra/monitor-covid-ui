@@ -9,94 +9,75 @@
 <ion-content [fullscreen]="true">
     <ion-img [src]="imgContent"></ion-img>
 
-    <ion-row>
-        <ion-col size="6">
-            <ion-card class="ion-card">
-                <ion-card-header class="card__header">
-                    Confirmados
-                </ion-card-header>
-                <ion-card-content>
-                    {{dados.confirmados.total}}
-                </ion-card-content>
-            </ion-card>
-        </ion-col>
-        <ion-col size="6">
-            <ion-card class="ion-card">
-                <ion-card-header class="card__header">
-                    Novos
-                </ion-card-header>
-                <ion-card-content>
-                    {{dados.confirmados.novos}}
-                </ion-card-content>
-            </ion-card>
-        </ion-col>
-    </ion-row>
+    <ion-card class="ion-card">
+        <ion-card-header class="card__header">
+            Confirmados
+        </ion-card-header>
+        <ion-card-content>
+            {{confirmados}}
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="ion-card">
+        <ion-card-header class="card__header">
+            Novos
+        </ion-card-header>
+        <ion-card-content>
+            {{novos}}
+        </ion-card-content>
+    </ion-card>
 
-    <ion-row>
-        <ion-col>
-            <ion-card class="ion-card">
-                <ion-card-header class="card__header">
-                    Incidência
-                </ion-card-header>
-                <ion-card-content>
-                    {{dados.confirmados.incidencia}}
-                </ion-card-content>
-            </ion-card>
-        </ion-col>
-        <ion-col>
-            <ion-card class="ion-card">
-                <ion-card-header class="card__header">
-                    Acompanhamento
-                </ion-card-header>
-                <ion-card-content>
-                    {{dados.confirmados.acompanhamento}}
-                </ion-card-content>
-            </ion-card>
-        </ion-col>
 
-    </ion-row>
+    <ion-card class="ion-card">
+        <ion-card-header class="card__header">
+            Incidência
+        </ion-card-header>
+        <ion-card-content>
+            {{incidencia}}
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="ion-card">
+        <ion-card-header class="card__header">
+            Acompanhamento
+        </ion-card-header>
+        <ion-card-content>
+            {{acompanhamento}}
+        </ion-card-content>
+    </ion-card>
+
 
     <ion-card class="nr__recuperados ion-card">
         <ion-card-header class="card__header">
             Recuperados
         </ion-card-header>
         <ion-card-content>
-            {{dados.confirmados.recuperados}}
+            {{recuperados}}
         </ion-card-content>
     </ion-card>
 
-    <ion-row>
-        <ion-card class="nr__obitos ion-card">
-            <ion-card-header class="card__header">
-                Total de Óbitos
-            </ion-card-header>
-            <ion-card-content>
-                {{dados.obitos.total}}
-            </ion-card-content>
-        </ion-card>
-    </ion-row>
-    <ion-row>
-        <ion-col>
-            <ion-card class="ion-card">
-                <ion-card-header class="card__header">
-                    Em 24hs
-                </ion-card-header>
-                <ion-card-content>
-                    {{dados.obitos.novos}}
-                </ion-card-content>
-            </ion-card>
-        </ion-col>
-        <ion-col>
-            <ion-card class="ion-card">
-                <ion-card-header class="card__header">
-                    Mortalidade
-                </ion-card-header>
-                <ion-card-content>
-                    {{dados.obitos.mortalidade}}%
-                </ion-card-content>
-            </ion-card>
-        </ion-col>
-    </ion-row>
+    <ion-card class="nr__obitos ion-card">
+        <ion-card-header class="card__header">
+            Total de Óbitos
+        </ion-card-header>
+        <ion-card-content>
+            {{totalObitos}}
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="ion-card">
+        <ion-card-header class="card__header">
+            Em 24hs
+        </ion-card-header>
+        <ion-card-content>
+            {{em24hs}}
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="ion-card">
+        <ion-card-header class="card__header">
+            Mortalidade
+        </ion-card-header>
+        <ion-card-content>
+            {{mortalidade}}%
+        </ion-card-content>
+    </ion-card>
     <ion-card>
         <ion-card-header class="card__header">Sobre os dados</ion-card-header>
         <ion-card-content>
