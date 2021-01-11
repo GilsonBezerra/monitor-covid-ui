@@ -1,0 +1,23 @@
+ion-back-button{
+  --color: black;
+}
+.subheader {
+    height: 58px;
+    width: 100%;
+    // background-color: #CC0000;
+    // color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    .subheader__text {
+        margin-top: 1rem;
+    }
+    ion-icon {
+        // color: #fff;
+        font-size: 1.5rem;
+        margin: 1.25rem;
+    }
+
+ion-button {
+    width: fit-content;
+}
+}

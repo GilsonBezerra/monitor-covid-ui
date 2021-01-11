@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-grid no-padding>
+    <ion-row class="subheader">
+      <ion-col class="ion-no-padding" (click)="close()" size="4">
+        <ion-icon name="arrow-back" size="middle" style="margin-left: 1rem;"></ion-icon>
+      </ion-col>
+      <ion-col class="subheader__text ion-float-left ion-no-padding" size="8">
+        Termos de uso
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+
+<div *ngIf="perfil === 1" >
+  <p>
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+    Mensagem para o perfil 1
+  </p>
+</div>
+
+<div *ngIf="perfil === 2" >
+  <p>
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+    Mensagem para o perfil 2
+  </p>
+</div>
+
+
+<ion-footer>
+  <ion-item lines="none">
+    <ion-label>Li e aceito os termos</ion-label>
+    <ion-checkbox  color="success" slot="start" (ionChange)="notify()"></ion-checkbox>
+  </ion-item>
+  <ion-button [disabled]="!isToggled" (click)="assignTerms()" horizontal="center" color="success" expand="block">
+    Continuar
+  </ion-button>
+</ion-footer>

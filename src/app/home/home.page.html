@@ -8,8 +8,7 @@
 
 <ion-content [fullscreen]="true">
     <ion-img [src]="imgContent"></ion-img>
-
-    <ion-card class="ion-card">
+    <ion-card class="ion-card" (click)="pushPage(confirmados)">
         <ion-card-header class="card__header">
             Confirmados
         </ion-card-header>
@@ -17,7 +16,7 @@
             {{confirmados}}
         </ion-card-content>
     </ion-card>
-    <ion-card class="ion-card">
+    <ion-card class="ion-card" (click)="pushPage(novos)">
         <ion-card-header class="card__header">
             Novos
         </ion-card-header>
@@ -25,9 +24,7 @@
             {{novos}}
         </ion-card-content>
     </ion-card>
-
-
-    <ion-card class="ion-card">
+    <ion-card class="ion-card" (click)="pushPage(incidencia)">
         <ion-card-header class="card__header">
             Incidência
         </ion-card-header>
@@ -35,7 +32,7 @@
             {{incidencia}}
         </ion-card-content>
     </ion-card>
-    <ion-card class="ion-card">
+    <ion-card class="ion-card" (click)="pushPage(acompanhamento)">
         <ion-card-header class="card__header">
             Acompanhamento
         </ion-card-header>
@@ -43,9 +40,7 @@
             {{acompanhamento}}
         </ion-card-content>
     </ion-card>
-
-
-    <ion-card class="nr__recuperados ion-card">
+    <ion-card class="nr__recuperados ion-card" (click)="pushPage(recuperados)">
         <ion-card-header class="card__header">
             Recuperados
         </ion-card-header>
@@ -53,8 +48,7 @@
             {{recuperados}}
         </ion-card-content>
     </ion-card>
-
-    <ion-card class="nr__obitos ion-card">
+    <ion-card class="nr__obitos ion-card" (click)="pushPage(totalObitos)">
         <ion-card-header class="card__header">
             Total de Óbitos
         </ion-card-header>
@@ -62,7 +56,7 @@
             {{totalObitos}}
         </ion-card-content>
     </ion-card>
-    <ion-card class="ion-card">
+    <ion-card class="ion-card" (click)="pushPage(em24hs)">
         <ion-card-header class="card__header">
             Em 24hs
         </ion-card-header>
@@ -70,7 +64,7 @@
             {{em24hs}}
         </ion-card-content>
     </ion-card>
-    <ion-card class="ion-card">
+    <ion-card class="ion-card" (click)="pushPage(mortalidade)">
         <ion-card-header class="card__header">
             Mortalidade
         </ion-card-header>
@@ -81,9 +75,11 @@
     <ion-card>
         <ion-card-header class="card__header">Sobre os dados</ion-card-header>
         <ion-card-content>
-            Os dados exibidos foram trazidos da API do Ministério da Saúde e é atualizado de acordo com a disponibilização das informações
+            Os dados exibidos foram trazidos da API do Ministério da Saúde e é
+            atualizado de acordo com a disponibilização das informações
         </ion-card-content>
     </ion-card>
+
 
     <!-- Footer without a border -->
     <ion-footer>
@@ -92,11 +88,22 @@
         </ion-toolbar>
     </ion-footer>
 
-    <ion-fab vertical="bottom" horizontal="center">
-        <ion-fab-button (click)="atualizarDados()">
-            <ion-icon name="reload-outline"></ion-icon>
-        </ion-fab-button>
-    </ion-fab>
+    <ion-row size="12" class="cols">
+        <ion-col size="6" class="ion-no-padding">
+            <ion-fab vertical="bottom">
+                <ion-fab-button (click)="atualizarDados()">
+                    <ion-icon name="reload-outline"></ion-icon>
+                </ion-fab-button>
+            </ion-fab>
+        </ion-col>
+        <ion-col size="6" class="ion-no-padding">
+            <ion-fab vertical="bottom">
+                <ion-fab-button (click)="openModalTermos()">
+                    <ion-icon name="alert-outline"></ion-icon>
+                </ion-fab-button>
+            </ion-fab>
+        </ion-col>
+    </ion-row>
 
 
 </ion-content>
