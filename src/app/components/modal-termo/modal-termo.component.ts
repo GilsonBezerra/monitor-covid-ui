@@ -1,6 +1,8 @@
+import { TERMO_PERFIL_2 } from './../mockTermos';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NavParams } from '@ionic/angular';
+import { TERMO_PERFIL_1 } from '../mockTermos';
 
 @Component({
   selector: 'app-modal-termo',
@@ -10,6 +12,8 @@ import { NavParams } from '@ionic/angular';
 export class ModalTermoComponent implements OnInit {
 
   public perfil = 'Texto';
+  public termoPerfil1 = TERMO_PERFIL_1.texto;
+  public termoPerfil2 = TERMO_PERFIL_2.texto;
   public isToggled;
 
   constructor(

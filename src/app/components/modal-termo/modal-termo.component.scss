@@ -1,5 +1,5 @@
-ion-back-button{
-  --color: black;
+ion-back-button {
+    --color: black;
 }
 .subheader {
     height: 58px;
@@ -17,7 +17,12 @@ ion-back-button{
         margin: 1.25rem;
     }
 
-ion-button {
-    width: fit-content;
+    ion-button {
+        width: fit-content;
+    }
 }
+p {
+    text-align: center;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
 }

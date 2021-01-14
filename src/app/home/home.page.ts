@@ -27,7 +27,7 @@ export class HomePage implements OnInit {
   public mortalidade;
   public sub: any;
 
-  public perfil = 1;
+  public perfil = 2;
 
   constructor(
     private dadosService : DadosService,
