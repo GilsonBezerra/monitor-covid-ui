@@ -30,6 +30,3 @@ export class ModalTermoComponent implements OnInit {
 
   public notify() {
     this.isToggled = !this.isToggled;
-  }
-
-}
